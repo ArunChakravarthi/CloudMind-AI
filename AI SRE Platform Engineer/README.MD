@@ -90,3 +90,36 @@ automatically modify or destroy production resources.
 
 Build and understand a production-oriented AI SRE /
 Platform Engineering system from the ground up.
+
+
+FastAPI
+
+"How does someone interact with our system?"
+
+MCP
+
+"How does the AI safely interact with external tools/live systems?"
+
+AKS
+
+"What infrastructure are we investigating?"
+
+RAG
+
+"What does our organization know about this problem?"
+
+AI Agent
+
+"Given the user's problem + live evidence + organizational knowledge, what should we investigate and conclude?"
+
+Zero Trust
+
+"Why should anyone or anything be trusted, and exactly what are they allowed to do?"
+
+RBAC
+
+"What is this identity actually authorized to access/do?"
+
+Read-only MCP
+
+"The AI can investigate production, but it cannot modify production."
