@@ -1,0 +1,1 @@
+An AI-powered, read-only AKS incident troubleshooting platform that investigates live Kubernetes failures, retrieves the company's internal runbooks, correlates the evidence, and gives the engineer an evidence-backed root-cause analysis and safe remediation steps.
