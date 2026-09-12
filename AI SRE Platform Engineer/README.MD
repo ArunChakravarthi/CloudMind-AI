@@ -43,41 +43,50 @@ AI SRE / Platform Engineer — an AI-driven operational assistant that investiga
                        Engineer
 
 
-| Layer                | Technology                         |
-| -------------------- | ---------------------------------- |
-| API                  | **FastAPI**                        |
-| API validation       | **Pydantic**                       |
-| AI Agent             | Azure/OpenAI model + orchestration |
-| Infrastructure tools | **MCP**                            |
-| Kubernetes           | **AKS**                            |
-| Knowledge/RAG        | **Azure AI Search**                |
-| Identity             | **Microsoft Entra ID**             |
-| Authorization        | **Azure RBAC + Kubernetes RBAC**   |
-| Secrets              | **Azure Key Vault**                |
-| Infrastructure       | **Terraform**                      |
-| Observability        | **Azure Monitor / Log Analytics**  |
-| Metrics              | Prometheus                         |
-| Dashboard            | Grafana                            |
-| Containers           | Docker                             |
-| CI/CD                | Azure DevOps/GitHub Actions        |
-| Security             | Zero Trust                         |
-| Testing              | pytest + incident scenarios        |
+# AI SRE / Platform Engineer
 
+An AI-powered SRE and Platform Engineering system for
+investigating Azure Kubernetes Service incidents.
 
+## Objective
 
-          ┌───────────────────────────────┐
-          │          ZERO TRUST           │
-          │                               │
-          │ Entra ID                      │
-          │ Least Privilege               │
-          │ RBAC                          │
-          │ Read-only MCP                 │
-          │ Secret Redaction              │
-          │ PII Protection                │
-          │ Input Validation              │
-          │ Output Validation             │
-          │ Audit Logging                 │
-          │ Tool Allowlisting             │
-          │ Human Approval                │
-          │                               │
-          └───────────────────────────────┘
+The system combines:
+
+- FastAPI
+- AI agent/orchestration
+- Model Context Protocol (MCP)
+- Azure Kubernetes Service (AKS)
+- Azure AI Search / RAG
+- Azure infrastructure
+- Observability
+- Zero Trust security
+
+## Core Workflow
+
+Engineer
+    ↓
+FastAPI
+    ↓
+AI Agent
+    ↓
+MCP + RAG
+    ↓
+Live AKS telemetry + Internal knowledge
+    ↓
+Correlation
+    ↓
+Root Cause Analysis
+    ↓
+Safe remediation guidance
+
+## Security Principle
+
+The AI is read-only with respect to production infrastructure.
+
+It can investigate infrastructure state but cannot
+automatically modify or destroy production resources.
+
+## Project Goal
+
+Build and understand a production-oriented AI SRE /
+Platform Engineering system from the ground up.
